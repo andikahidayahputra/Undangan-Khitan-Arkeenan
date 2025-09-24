@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="id">
 <head>
     <meta charset="utf-8" />
@@ -9,11 +10,15 @@
     
     <style>
         :root{
-            --overlay-rgba: rgba(0,0,0,0.45);
-            --accent: rgba(255,255,255,0.12);
-            --glass: rgba(255,255,255,0.06);
-            --radius: 14px;
-            --max-width: 900px;
+            -.overlay{
+    position:absolute;
+    inset:0;
+
+    z-index:1;
+    backdrop-filter: blur(0%);
+    /* Tambahan kode untuk membuat sudut membulat */
+    border-radius: var(14px radius);
+}
         }
         html,body{
             height:100%;
